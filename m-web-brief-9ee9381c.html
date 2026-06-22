@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>竞彩网 · 稳定入口与使用说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f7f5f0;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+            color: #2c3e4f;
+            line-height: 1.65;
+        }
+
+        /* === 深色头图 hero === */
+        .hero {
+            background: linear-gradient(145deg, #10161e 0%, #1c2935 100%);
+            padding: 5rem 1.5rem 4.5rem;
+            text-align: center;
+            color: #eaeef3;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #c0a06a, transparent);
+        }
+
+        .hero h1 {
+            font-weight: 400;
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.6rem;
+        }
+
+        .hero h1 span {
+            display: inline-block;
+            border-bottom: 1px solid #c0a06a;
+            padding-bottom: 0.4rem;
+        }
+
+        .hero p.lead {
+            max-width: 520px;
+            margin: 1.2rem auto 0;
+            font-size: 1.05rem;
+            color: #bcc9d6;
+            font-weight: 300;
+        }
+
+        /* === 浅色正文区 === */
+        .content {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 4rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #1c2935;
+            border-left: 3px solid #c0a06a;
+            padding-left: 0.9rem;
+            margin-bottom: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            color: #36454f;
+        }
+
+        p.soft {
+            color: #5a6b7a;
+        }
+
+        /* 强调色链接 */
+        a {
+            color: #7f5c3c;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+            font-weight: 450;
+        }
+
+        a:hover,
+        a:focus {
+            color: #b27d4a;
+            border-bottom: 1px solid #b27d4a;
+        }
+
+        /* 特点列表 —— 卡片感 */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+            margin: 1.8rem 0 0.8rem;
+        }
+
+        @media (min-width: 560px) {
+            .feature-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .feature-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 1.6rem 1.4rem 1.4rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03), 0 1px 4px rgba(0, 0, 0, 0.04);
+            border: 1px solid #e7e4db;
+            transition: box-shadow 0.2s;
+        }
+
+        .feature-card:hover {
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-card h3 {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #1f2b37;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #536572;
+            margin-bottom: 0;
+        }
+
+        /* 温和结尾区块 */
+        .closing {
+            background: #f0ede6;
+            border-radius: 18px;
+            padding: 2rem 2rem 2.2rem;
+            margin: 2.8rem 0 1rem;
+        }
+
+        .closing p {
+            margin-bottom: 0.6rem;
+            color: #2e404f;
+        }
+
+        .closing .signature {
+            margin-top: 1.2rem;
+            font-size: 0.9rem;
+            color: #6b7d8b;
+            letter-spacing: 0.3px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #dddad1;
+            margin: 2.5rem 0 0.8rem;
+        }
+
+        .footnote {
+            font-size: 0.88rem;
+            color: #7c8c9a;
+            text-align: center;
+        }
+
+        /* 响应式微调 */
+        @media (max-width: 480px) {
+            .hero {
+                padding: 3.5rem 1rem 3rem;
+            }
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            .content {
+                padding: 2rem 1rem 3rem;
+            }
+            .closing {
+                padding: 1.6rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 深色头图・开场短句 -->
+    <header class="hero">
+        <h1><span>竞彩网</span></h1>
+        <p class="lead">一个稳定的入口，往往比喧嚣的承诺更值得信赖。<br>页面本身即是说明。</p>
+    </header>
+
+    <!-- 浅色正文区 -->
+    <main class="content">
+
+        <!-- 承接段落 -->
+        <section>
+            <h2 class="section-title">从一处入口说起</h2>
+            <p>
+                很多人第一次接触竞彩类的信息平台时，最先关心的不是功能有多全，而是——这个地址是否稳定、内容是否清晰。多年前我第一次打开那个页面时，也带着同样的想法。后来逐渐明白，真正让人安心的，往往不是花哨的动画，而是每一次点开都能看到干净的结构、明确的分类，以及不加粉饰的指引。
+            </p>
+            <p>
+                如今，这个地址依然在。<a href="https://m-web-jcw.com">竞彩网</a> 保持着一贯的克制：没有什么弹窗问候，也没有催促注册的横幅。它更像一本翻开的册子，每一页都安静地等着你。如果你需要一个随时可以打开、不用猜来猜去的页面，它就在那里。
+            </p>
+        </section>
+
+        <!-- 特点列表 —— 从稳定入口和页面说明切入 -->
+        <section>
+            <h2 class="section-title">这个页面本身有什么</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>直达 · 无中间页</h3>
+                    <p>没有漫长的跳转或中转页面。链接即终点，打开就是内容本身。你不需要在三个页面之间反复折返。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>结构一目了然</h3>
+                    <p>标题、导航、信息分区都采用极简的排版。即使第一次访问，也能在三秒内找到自己需要的部分。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>不收集多余信息</h3>
+                    <p>页面不嵌入非必要的追踪脚本，也没有隐藏的统计模块。它只做一件事：把内容呈现出来。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>适配常见屏幕</h3>
+                    <p>从手机到桌面，版式自动调整。没有左右滑动、没有按钮被遮挡——虽然不是大厂作品，但在可用性上花了心思。</p>
+                </div>
+            </div>
+            <p class="soft" style="margin-top: 1.2rem;">
+                这些特点听起来或许简单，但在信息过载的时代，一个不添乱的页面本身就是一种设计选择。
+            </p>
+        </section>
+
+        <!-- 一段温和的场景提示（替代 FAQ 摘要） -->
+        <section>
+            <h2 class="section-title">什么时候会用到它</h2>
+            <p>
+                如果你正在寻找一个日常查阅的落脚点，不需要每次重新输入长串网址，也不想被推送打扰——<a href="https://m-web-jcw.com">竞彩网</a> 这样的页面会是一个不显眼但可靠的存在。它适合在晚间安静地打开，扫一眼结构，然后关闭。没有数据焦虑，也没有未读标记。
+            </p>
+            <p>
+                初次访问时，建议花半分钟从上到下浏览一遍。页面结构本身已经说明了大部分功能的位置。后续再来，你大概就知道自己需要什么了。
+            </p>
+        </section>
+
+        <!-- 温和结尾 -->
+        <div class="closing">
+            <p>我们总在寻找更好的入口，但有时最好的入口就是那个一直在的、不怎么说话的老地址。</p>
+            <p>它不承诺惊喜，但它不会在某一天突然消失，也不会把首页改成你认不出的模样。</p>
+            <div class="signature">—— 页面说明 · 保持朴素</div>
+        </div>
+
+        <hr>
+
+        <div class="footnote">
+            <a href="https://m-web-jcw.com">竞彩网</a> · 稳定入口与页面索引<br>
+            内容仅供参考，不构成任何建议。
+        </div>
+
+    </main>
+
+</body>
+</html>
